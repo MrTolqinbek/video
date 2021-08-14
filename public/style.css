@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border: 5px groove rgb(5, 11, 63);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, rgba(17, 16, 16, 0.705), rgba(4, 3, 29, 0.664)), url("/images/back.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.right {
+    width: 240px;
+    float: right;
+    height: 100vh;
+    border-left: 5px ridge rgb(8, 4, 56);
+}
+
+.left {
+    width: calc(100vw - 250px);
+    float: left;
+    height: 100vh;
+}
+
+.video {
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.video::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.controls {
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background-color: rgba(2, 2, 20, 0.822);
+}
+
+.controls:hover {
+    box-shadow: 0px -10px 10px 0.1px rgba(211, 243, 231, 0.103);
+}
+
+.video>video {
+    margin: 20px;
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+.message {
+    width: 200px;
+    background-color: rgba(4, 35, 102, 0.61);
+    margin: 20px 10px 10px 10px;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px blue;
+    border: 2px solid rgb(3, 13, 104);
+    outline: none;
+    background-color: rgba(87, 53, 85, 0.637);
+
+}
+
+.input {
+    align-items: center;
+    display: flex;
+    height: 30px;
+    justify-content: space-around;
+}
+
+.chat {
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.chat::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 255, 0.616);
+}
+
+.chat::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.692);
+}
+
+.mute {
+    color: rgb(9, 77, 109);
+}
+
+.stop {
+    color: rgba(189, 9, 9, 0.582);
+}
+
+.leave {
+    font-weight: bold;
+    color: rgb(161, 71, 7);
+}
+
+input {
+    outline: none;
+    padding: 5px 20px;
+    width: 180px;
+    border-radius: 10px;
+    border: none;
+}

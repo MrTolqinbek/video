@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="peer.min.js"></script>
+    <title>Video App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="video" id="video">
+
+            </div>
+            <div class="controls">
+                <div class="mute">
+                    <i class="fa fa-microphone" aria-hidden="true"></i>
+                </div>
+                <div class="stop">
+                    <i class="fa fa-stop" aria-hidden="true"></i>
+                </div>
+                <div class="leave">
+                    leave meeting
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="chat">
+            </div>
+            <div class="input">
+                <input type="text" id="text">
+                <button class="btn" id="btn"></button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const roomId = "<%=roomID%>"
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
